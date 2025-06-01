@@ -33,11 +33,11 @@
 
 .header-rec-icon::after {
   content: ""; 
-  width: 9px; 
+  width: 9px;
   height: 9px;
-  background-color:var(--accent-color); 
-  border-radius: 50%; 
-  margin-left: 10px; 
+  background-color:var(--accent-color);
+  border-radius: 50%;
+  margin-left: 10px;
   box-shadow: 0px 0px 4px 2px var(--title-clr-section);
 }
 
@@ -45,7 +45,7 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--button-active-clr); 
+  border-top: 1px solid var(--button-active-clr);
   border-right: 1px solid var(--button-active-clr);
   position: absolute;
   inset-inline-end: 10px;
@@ -55,7 +55,7 @@
 .decorated-zone::after {
   content: '';
   position: absolute;
-  border-left: 1px solid var(--button-active-clr); 
+  border-left: 1px solid var(--button-active-clr);
   border-bottom: 1px solid var(--button-active-clr);
   block-size: 25px;
   inline-size: 25px;
@@ -212,17 +212,6 @@
   padding: 10px;
 }
 
-.decorated-zone::before {
-  content: "";
-  width: 25px;
-  height: 25px;
-  border-top: 1px solid var(--button-active-clr); 
-  border-right: 1px solid var(--button-active-clr);
-  position: absolute;
-  inset-inline-end: 10px;
-  inset-block-start: 10px;
-}
-
 .footer-decor {
   text-shadow: 4px 4px 0 var(--accent-color);
   font-family: var(--accent-font);
@@ -232,20 +221,10 @@
   font-weight: 700;
 }
 
-.decorated-zone::after {
-  content: '';
-  position: absolute;
-  border-left: 1px solid var(--button-active-clr); 
-  border-bottom: 1px solid var(--button-active-clr);
-  block-size: 25px;
-  inline-size: 25px;
-  inset-inline-start:10px;
-  inset-block-end:10px;
-}
-
 @media (min-width: 768px) {
   .header {
     padding: 20px;
+    min-block-size: 1024px;
   }
 
   .header-rec-icon {
@@ -271,7 +250,9 @@
 
   .header__block-text {
     margin-block-start: 80px;
-    max-inline-size: 364px;
+    inline-size: 50%;
+    margin-left: auto;
+  
   }
 
   .decorated-zone::after {
@@ -353,7 +334,7 @@
     inset-block-start: 20px;
  }
 
- .decorated-zone::after{
+ .decorated-zone::after {
   inset-inline-start:20px;
   inset-block-end:20px;
  }
@@ -393,7 +374,7 @@
   grid-template-columns: repeat(3, minmax(315px, 1fr));
 }
 
-.section-concentration-title{
+.section-concentration-title {
   grid-column: span 3;
   max-inline-size: 315px;
 }
