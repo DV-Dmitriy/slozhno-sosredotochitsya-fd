@@ -32,7 +32,7 @@
 }
 
 .header-rec-icon::after {
-  content: ""; 
+  content: "";
   width: 9px;
   height: 9px;
   background-color:var(--accent-color);
@@ -224,7 +224,7 @@
 @media (min-width: 768px) {
   .header {
     padding: 20px;
-    min-block-size: 1024px;
+    min-block-size: 768px;
   }
 
   .header-rec-icon {
@@ -327,16 +327,6 @@
 
  .image-content:nth-of-type(5) {
   grid-column: span 2
- }
-
- .decorated-zone::before {
-    inset-inline-end: 20px;
-    inset-block-start: 20px;
- }
-
- .decorated-zone::after {
-  inset-inline-start:20px;
-  inset-block-end:20px;
  }
 
 }
